@@ -64,7 +64,7 @@ class User extends Resource
                 ->creationRules('required', 'string', 'min:8')
                 ->updateRules('nullable', 'string', 'min:8'),
 
-    CheckboxField::make('Test'),
+   // CheckboxField::make('Test'),
         ];
     }
 
