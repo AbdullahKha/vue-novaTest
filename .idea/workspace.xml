@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vue-novaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-novaTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/user.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +161,7 @@
       <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
       <path value="$PROJECT_DIR$/vendor/jeroennoten/laravel-adminlte" />
       <path value="$PROJECT_DIR$/vendor/pishran/nova-rtl-theme" />
+      <path value="$PROJECT_DIR$/vendor/david-griffiths/nova-dark-theme" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ciDIlrsYHnJfHFlksJks5Zc1EF" />
@@ -177,6 +178,10 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/vendor/nova" />
+      <recent name="$PROJECT_DIR$/resources/views/vendor/nova/partials" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -211,6 +216,7 @@
       <workItem from="1591173098874" duration="1495000" />
       <workItem from="1592217523748" duration="96000" />
       <workItem from="1597302862770" duration="1925000" />
+      <workItem from="1597519666069" duration="1698000" />
     </task>
     <servers />
   </component>

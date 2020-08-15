@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d976fb104f21527005032ed55641c40",
+    "content-hash": "f8859d2377dd6356f13bf84882449414",
     "packages": [
         {
             "name": "Ab/CheckboxField",
@@ -249,6 +249,40 @@
             "time": "2019-12-24T22:41:47+00:00"
         },
         {
+            "name": "braceyourself/default-nova-gravatar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/braceyourself/default-nova-gravatar.git",
+                "reference": "5ec976f4dc6a9fd14f790b1442debe442f3201b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/braceyourself/default-nova-gravatar/zipball/5ec976f4dc6a9fd14f790b1442debe442f3201b4",
+                "reference": "5ec976f4dc6a9fd14f790b1442debe442f3201b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Braceyourself\\GravatarDefault\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A field that should probably be a PR",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2020-03-03T15:03:50+00:00"
+        },
+        {
             "name": "brick/math",
             "version": "0.8.15",
             "source": {
@@ -406,6 +440,57 @@
                 "time"
             ],
             "time": "2020-05-26T01:27:20+00:00"
+        },
+        {
+            "name": "david-griffiths/nova-dark-theme",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/David-Griffiths/Nova-Dark-Theme.git",
+                "reference": "dfd190f4d3454e5ec066b886ad687c135b680f3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/David-Griffiths/Nova-Dark-Theme/zipball/dfd190f4d3454e5ec066b886ad687c135b680f3b",
+                "reference": "dfd190f4d3454e5ec066b886ad687c135b680f3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DavidGriffiths\\NovaDarkTheme\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DavidGriffiths\\NovaDarkTheme\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Griffiths",
+                    "homepage": "https://github.com/David-Griffiths",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A dark theme for Laravel Nova",
+            "homepage": "https://github.com/David-Griffiths/Nova-Dark-Theme",
+            "keywords": [
+                "dark",
+                "laravel",
+                "nova",
+                "theme"
+            ],
+            "time": "2019-02-16T22:07:27+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -6650,6 +6735,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -7526,7 +7612,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "braceyourself/default-nova-gravatar": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

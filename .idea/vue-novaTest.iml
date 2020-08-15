@@ -11,10 +11,12 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/almasaeed2010/adminlte" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ampeco/nova-date-range-filter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/braceyourself/default-nova-gravatar" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/money" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/chronos" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/david-griffiths/nova-dark-theme" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
