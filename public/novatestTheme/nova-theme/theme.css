@@ -1,0 +1,47 @@
+.font-sans {
+    font-family: Raleway,Nunito,system-ui,BlinkMacSystemFont,-apple-system,sans-serif;
+}
+.bg-white {
+    background-color:	#ffffff;
+}
+.w-sidebar {
+    width: 13.75rem;
+    background-color:grey;
+    font-size: 13.5pt;
+}
+.bg-grad-sidebar {
+
+    background-image: linear-gradient(0deg,	#3e6284,#3e6284);
+    background-attachment: fixed;
+}
+.content {
+    min-width: 66.25rem;
+    width: 100%;
+    max-width: calc(100vw - 13.75rem);
+    font-size: 13.5pt;
+
+}
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+.card {
+    background-color:white;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    border-radius: 0.90rem;
+}
+div.select-none.overflow-hidden
+{
+    left:-35px !important;
+
+    position: absolute !important;
+
+}
+
+
+
+
+

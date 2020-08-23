@@ -20,14 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/novatestTheme/nova-theme/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/ar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vue-novaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-novaTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/nova/public/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/nova/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/nova/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +168,17 @@
       <path value="$PROJECT_DIR$/vendor/jeroennoten/laravel-adminlte" />
       <path value="$PROJECT_DIR$/vendor/pishran/nova-rtl-theme" />
       <path value="$PROJECT_DIR$/vendor/david-griffiths/nova-dark-theme" />
+      <path value="$PROJECT_DIR$/vendor/braceyourself/default-nova-gravatar" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/laravel-nova-excel" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/halimtuhu/array-images" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ciDIlrsYHnJfHFlksJks5Zc1EF" />
@@ -171,19 +188,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/vendor/nova" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/lang/vendor/nova" />
+      <recent name="$PROJECT_DIR$/resources/lang" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/vendor/nova" />
       <recent name="$PROJECT_DIR$/resources/views/vendor/nova/partials" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -216,7 +235,10 @@
       <workItem from="1591173098874" duration="1495000" />
       <workItem from="1592217523748" duration="96000" />
       <workItem from="1597302862770" duration="1925000" />
-      <workItem from="1597519666069" duration="1698000" />
+      <workItem from="1597519666069" duration="2173000" />
+      <workItem from="1597584710163" duration="382000" />
+      <workItem from="1597739325868" duration="8633000" />
+      <workItem from="1598169094467" duration="4633000" />
     </task>
     <servers />
   </component>
@@ -240,13 +262,26 @@
       <screen x="0" y="23" width="1920" height="991" />
     </state>
     <state x="733" y="291" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.991@0.23.1920.991" timestamp="1591030362000" />
+    <state x="-3275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598170775037">
+      <screen x="-3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-3275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1680.1050@-3840.0.1920.1080" timestamp="1598170775037" />
+    <state x="-3275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.23.1920.1057/-3840.0.1920.1080/0.23.1680.985@-3840.0.1920.1080" timestamp="1598169614261" />
+    <state x="-3143" y="301" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598173152464">
+      <screen x="-3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1223" y="301" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1597742360520" />
+    <state x="-1223" y="301" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1080/-3840.23.1920.1057/0.23.1680.984@-1920.0.1920.1080" timestamp="1597741955781" />
+    <state x="-3143" y="301" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.23.1920.1057/-3840.0.1920.1080/0.23.1680.985@-3840.0.1920.1080" timestamp="1598173152464" />
+    <state x="-1223" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.23.1920.1057/-3840.23.1920.1057/0.23.1680.990@-1920.23.1920.1057" timestamp="1597755611926" />
     <state x="780" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591031350448">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
     <state x="780" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.991@0.23.1920.991" timestamp="1591031350448" />
-    <state x="646" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1591023025159">
-      <screen x="0" y="23" width="1920" height="992" />
+    <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup" timestamp="1597741311583">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1597741311583" />
     <state x="646" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1920.992@0.23.1920.992" timestamp="1591023025159" />
   </component>
   <component name="masterDetails">
