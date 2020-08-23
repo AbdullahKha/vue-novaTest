@@ -57,7 +57,7 @@ class User extends Resource
         return [
             ID::make()->sortable(),
 //            ArrayImages::make('Images', 'images'),
-            Gravatar::make()->maxWidth(50),
+//            Gravatar::make()->maxWidth(50),
 
             Text::make('Name')
                 ->sortable()

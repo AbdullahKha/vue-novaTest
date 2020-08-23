@@ -8,7 +8,7 @@
     class="bg-white shadow rounded-lg p-8 max-w-login mx-auto"
     method="POST"
     action="{{ route('nova.login') }}"
->
+ dir="rtl">
     {{ csrf_field() }}
 
     @component('nova::auth.partials.heading')
@@ -41,14 +41,14 @@
             <span class="text-base ml-2">{{ __('Remember Me') }}</span>
         </label>
 
-
         @if (\Laravel\Nova\Nova::resetsPasswords())
-        <div class="ml-auto">
-            <a class="text-primary dim font-bold no-underline" href="{{ route('nova.password.request') }}">
-                {{ __('Forgot Your Password?') }}
-            </a>
-        </div>
+            <div class="ml-auto">
+                <a class="text-primary dim font-bold no-underline" href="{{ route('nova.password.request') }}">
+                    {{ __('Forgot Your Password?') }}
+                </a>
+            </div>
         @endif
+
     </div>
 
     <button class="w-full btn btn-default btn-primary hover:bg-primary-dark" type="submit">

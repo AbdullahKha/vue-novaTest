@@ -52,7 +52,6 @@ class Task extends Resource
         return [
             ID::make(__('ID'),'id')->sortable(),
             Text::make(__('name'),'name') ->rules('required', 'max:255'),
-            Text::make(__('section'),'section') ->rules('required', 'max:255'),
             BelongsTo::make(__('Project'),'project',Project::class),
             BelongsTo::make(__('Type Of Task'),'type_task',TypeOfTask::class),
         ];

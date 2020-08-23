@@ -6,12 +6,12 @@
 }
 .w-sidebar {
     width: 13.75rem;
-    background-color:grey;
+    background-color:whitesmoke;
     font-size: 13.5pt;
 }
 .bg-grad-sidebar {
 
-    background-image: linear-gradient(0deg,	#3e6284,#3e6284);
+    background-image: linear-gradient(0deg,	#3e8483,#3e8483);
     background-attachment: fixed;
 }
 .content {
@@ -39,6 +39,78 @@ div.select-none.overflow-hidden
 
     position: absolute !important;
 
+}
+
+:root {
+    --logo: #303F9F;
+}
+/*.pin-l{*/
+/*    right: auto;*/
+/*}*/
+.font-sans {
+    font-family: 'Droid Arabic Kufi',Nunito ,system-ui,BlinkMacSystemFont,-apple-system,sans-serif;
+}
+
+
+.btn-primary {
+
+    background-color: #FFC107;
+}
+
+
+.languagepicker {
+    display: inline-block;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    transition: all .3s ease;
+    vertical-align: top;
+    position: relative;
+}
+
+.languagepicker:hover {
+    height: 128px;
+}
+
+.languagepicker a{
+    color: #000;
+    text-decoration: none;
+}
+
+.languagepicker li {
+    display: block;
+    padding: 0px 20px;
+    line-height: 40px;
+    /*border-top: 1px solid #EEE;*/
+}
+
+
+.languagepicker a:first-child li {
+    border: none;
+    background: #FFF !important;
+}
+
+.languagepicker li img {
+    margin-right: 5px;
+    vertical-align:middle;
+}
+
+/** for fixing nova metrics charts */
+
+.vertical-center.ct-chart {
+
+    right:inherit!important;
+    left:20px;
+    margin-right: 10px;
+}
+
+div[dusk='filter-selector'] .dropdown-menu div.overflow-hidden {
+    width:500px!important;
+    height: 100%;
+}
+
+div[dusk='filter-selector'] .dropdown-menu div.scroll-wrap {
+    max-height: 500px!important;
 }
 
 

@@ -20,20 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/novatestTheme/nova-theme/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/ar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vue-novaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-novaTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nova/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/nova/public/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/nova/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/nova/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_125511_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_23_125511_create_tasks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova/resources/views/auth/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/resources/views/auth/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/novatestTheme/nova-theme/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/novatestTheme/nova-theme/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +234,7 @@
       <workItem from="1597519666069" duration="2173000" />
       <workItem from="1597584710163" duration="382000" />
       <workItem from="1597739325868" duration="8633000" />
-      <workItem from="1598169094467" duration="4633000" />
+      <workItem from="1598169094467" duration="10392000" />
     </task>
     <servers />
   </component>
