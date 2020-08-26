@@ -2,10 +2,13 @@
 
 namespace App\Nova;
 
+use http\Url;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Project extends Resource
@@ -52,6 +55,10 @@ class Project extends Resource
         return [
             ID::make(__('ID'),'id')->sortable(),
             Text::make(__('Projects Name'),'project_name') ->rules('required', 'max:255'),
+            Text::make('url_project'),
+            Textarea::make('information_project'),
+            DateTime::make('startDate_project')->showOnDetail()->rules('required'),
+            DateTime::make('endDate_project')->showOnDetail()->rules('required'),
             BelongsTo::make(__('AssignTo'),'user',User::class),
         ];
     }

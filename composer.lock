@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5823a81c874855856c237b953e6064b9",
+    "content-hash": "29681be55f4fae4fca22aba3f984fb91",
     "packages": [
         {
             "name": "Ab/CheckboxField",
@@ -440,6 +440,56 @@
                 "time"
             ],
             "time": "2020-05-26T01:27:20+00:00"
+        },
+        {
+            "name": "czemu/nova-calendar-tool",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/czemu/nova-calendar-tool.git",
+                "reference": "7570140c25845b4adc0133ff3b4d75e3c9e3f7ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/czemu/nova-calendar-tool/zipball/7570140c25845b4adc0133ff3b4d75e3c9e3f7ee",
+                "reference": "7570140c25845b4adc0133ff3b4d75e3c9e3f7ee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0",
+                "spatie/laravel-google-calendar": "^2.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Czemu\\NovaCalendarTool\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Czemu\\NovaCalendarTool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paweł Dymek",
+                    "email": "pawel.dymek@gmail.com",
+                    "homepage": "https://paweldymek.com/"
+                }
+            ],
+            "description": "Calendar tool for Laravel Nova.",
+            "keywords": [
+                "calendar",
+                "laravel",
+                "nova"
+            ],
+            "time": "2020-07-04T13:50:09+00:00"
         },
         {
             "name": "david-griffiths/nova-dark-theme",
@@ -1139,6 +1189,56 @@
             "time": "2020-02-22T01:51:47+00:00"
         },
         {
+            "name": "firebase/php-jwt",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "feb0e820b8436873675fd3aca04f3728eb2185cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/feb0e820b8436873675fd3aca04f3728eb2185cb",
+                "reference": "feb0e820b8436873675fd3aca04f3728eb2185cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 <=9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "time": "2020-03-25T18:49:23+00:00"
+        },
+        {
             "name": "fruitcake/laravel-cors",
             "version": "v1.0.6",
             "source": {
@@ -1211,6 +1311,157 @@
                 }
             ],
             "time": "2020-04-28T08:47:37+00:00"
+        },
+        {
+            "name": "google/apiclient",
+            "version": "v2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-api-php-client.git",
+                "reference": "48ec94577b51bde415270116118b07a294e07c43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/48ec94577b51bde415270116118b07a294e07c43",
+                "reference": "48ec94577b51bde415270116118b07a294e07c43",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0",
+                "google/apiclient-services": "~0.13",
+                "google/auth": "^1.10",
+                "guzzlehttp/guzzle": "~5.3.1||~6.0||~7.0",
+                "guzzlehttp/psr7": "^1.2",
+                "monolog/monolog": "^1.17|^2.0",
+                "php": ">=5.4",
+                "phpseclib/phpseclib": "~0.3.10||~2.0"
+            },
+            "require-dev": {
+                "cache/filesystem-adapter": "^0.3.2",
+                "composer/composer": "^1.10",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "phpcompatibility/php-compatibility": "^9.2",
+                "phpunit/phpunit": "^4.8.36|^5.0",
+                "squizlabs/php_codesniffer": "~2.3",
+                "symfony/css-selector": "~2.1",
+                "symfony/dom-crawler": "~2.1"
+            },
+            "suggest": {
+                "cache/filesystem-adapter": "For caching certs and tokens (using Google_Client::setCache)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Google_": "src/"
+                },
+                "classmap": [
+                    "src/Google/Service/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Client library for Google APIs",
+            "homepage": "http://developers.google.com/api-client-library/php",
+            "keywords": [
+                "google"
+            ],
+            "time": "2020-07-23T21:37:43+00:00"
+        },
+        {
+            "name": "google/apiclient-services",
+            "version": "v0.143",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-api-php-client-services.git",
+                "reference": "22f5d97f1fb83a9de553319354b36b829549975a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/22f5d97f1fb83a9de553319354b36b829549975a",
+                "reference": "22f5d97f1fb83a9de553319354b36b829549975a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Google_Service_": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Client library for Google APIs",
+            "homepage": "http://developers.google.com/api-client-library/php",
+            "keywords": [
+                "google"
+            ],
+            "time": "2020-08-23T00:24:45+00:00"
+        },
+        {
+            "name": "google/auth",
+            "version": "v1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-auth-library-php.git",
+                "reference": "bb959e91bd8ffbd352ab76cbf11d656ce6435088"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/bb959e91bd8ffbd352ab76cbf11d656ce6435088",
+                "reference": "bb959e91bd8ffbd352ab76cbf11d656ce6435088",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "~2.0|~3.0|~4.0|~5.0",
+                "guzzlehttp/guzzle": "^5.3.1|^6.2.1|^7.0",
+                "guzzlehttp/psr7": "^1.2",
+                "php": ">=5.4",
+                "psr/cache": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/promises": "0.1.1|^1.3",
+                "kelvinmo/simplejwt": "^0.2.5",
+                "phpseclib/phpseclib": "^2",
+                "phpunit/phpunit": "^4.8.36|^5.7",
+                "sebastian/comparator": ">=1.2.3",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings or for token management. Please require version ^2."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Auth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google Auth Library for PHP",
+            "homepage": "http://github.com/google/google-auth-library-php",
+            "keywords": [
+                "Authentication",
+                "google",
+                "oauth2"
+            ],
+            "time": "2020-07-27T18:33:35+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -2774,6 +3025,62 @@
             "time": "2020-05-25T09:32:45+00:00"
         },
         {
+            "name": "optimistdigital/nova-multiselect-field",
+            "version": "1.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optimistdigital/nova-multiselect-field.git",
+                "reference": "d52015e186ed9b281513c3b701c05656dc35c6c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optimistdigital/nova-multiselect-field/zipball/d52015e186ed9b281513c3b701c05656dc35c6c4",
+                "reference": "d52015e186ed9b281513c3b701c05656dc35c6c4",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^2.0.11 || ^3.0",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OptimistDigital\\MultiselectField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OptimistDigital\\MultiselectField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tarvo Reinpalu",
+                    "email": "tarvoreinpalu@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Optimist Digital",
+                    "email": "info@optimistdigital.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A multiple select field for Laravel Nova.",
+            "keywords": [
+                "laravel",
+                "multiselect",
+                "nova",
+                "select"
+            ],
+            "time": "2020-08-10T07:26:36+00:00"
+        },
+        {
             "name": "phpoffice/phpspreadsheet",
             "version": "1.14.1",
             "source": {
@@ -3138,6 +3445,52 @@
                 "theme"
             ],
             "time": "2020-03-29T15:52:47+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/container",
@@ -3739,6 +4092,77 @@
                 }
             ],
             "time": "2020-03-29T20:13:32+00:00"
+        },
+        {
+            "name": "spatie/laravel-google-calendar",
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-google-calendar.git",
+                "reference": "274a4c0eb4c8253a7d3d1996b4d7558a7bef9205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-google-calendar/zipball/274a4c0eb4c8253a7d3d1996b4d7558a7bef9205",
+                "reference": "274a4c0eb4c8253a7d3d1996b4d7558a7bef9205",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.2",
+                "illuminate/support": "^6.0|^7.0",
+                "nesbot/carbon": "^2.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.0",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.4|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\GoogleCalendar\\GoogleCalendarServiceProvider"
+                    ],
+                    "aliases": {
+                        "GoogleCalendar": "Spatie\\GoogleCalendar\\GoogleCalendarFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\GoogleCalendar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manage events on a Google Calendar",
+            "homepage": "https://github.com/spatie/laravel-google-calendar",
+            "keywords": [
+                "calendar",
+                "event",
+                "google",
+                "laravel-google-calendar",
+                "schedule",
+                "spatie"
+            ],
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-07-19T09:08:41+00:00"
         },
         {
             "name": "spatie/once",

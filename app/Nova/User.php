@@ -3,8 +3,10 @@
 namespace App\Nova;
 
 use Ab\CheckboxField\CheckboxField;
+use App\Nova\Filters\BirthdayFilter;
 use App\Nova\Filters\DateRange;
 use App\Nova\Filters\NumberRange;
+use App\Nova\Filters\UserType;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\HasMany;
@@ -100,7 +102,9 @@ class User extends Resource
         return [
 
             new NumberRange(),
-            new DateRange()
+            new DateRange(),
+            new UserType(),
+            new BirthdayFilter()
         ];
     }
 

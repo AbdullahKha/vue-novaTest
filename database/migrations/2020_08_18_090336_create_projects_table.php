@@ -17,6 +17,10 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('created_by_user_id');
             $table->string('project_name');
+            $table->string('url_project');
+            $table->text('information_project');
+            $table->timestamp('startDate_project');
+            $table->timestamp('endDate_project');
             $table->foreign('created_by_user_id')
                 ->references('id')
                 ->on('users')
