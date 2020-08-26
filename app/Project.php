@@ -11,6 +11,7 @@ class Project extends Model
         'startDate_project'=>'dateTime',
          'endDate_project'=>'dateTime'
     ];
+
     public function user(){
         return $this->belongsTo(User::class, 'created_by_user_id');
     }

@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vue-novaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-novaTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_090336_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_090336_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nova/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/resources/views/auth/login.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +231,7 @@
       <workItem from="1597519666069" duration="2173000" />
       <workItem from="1597584710163" duration="382000" />
       <workItem from="1597739325868" duration="8633000" />
-      <workItem from="1598169094467" duration="17437000" />
+      <workItem from="1598169094467" duration="17735000" />
     </task>
     <servers />
   </component>

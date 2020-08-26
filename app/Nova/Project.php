@@ -57,8 +57,9 @@ class Project extends Resource
             Text::make(__('Projects Name'),'project_name') ->rules('required', 'max:255'),
             Text::make('url_project'),
             Textarea::make('information_project'),
-            DateTime::make('startDate_project')->showOnDetail()->rules('required'),
-            DateTime::make('endDate_project')->showOnDetail()->rules('required'),
+            DateTime::make(__('startDate_project'),'startDate_project')->showOnDetail()->rules('required'),
+            DateTime::make(__('endDate_project'),'endDate_project')->showOnDetail()->rules('required'),
+
             BelongsTo::make(__('AssignTo'),'user',User::class),
         ];
     }
