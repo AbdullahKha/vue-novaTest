@@ -2,13 +2,15 @@
 
 namespace App\Nova;
 
-use http\Url;
+
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\DateTime;
+use Laravel\Nova\Fields\Date;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
+use Khalin\Nova\Field\Link;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Project extends Resource
@@ -52,16 +54,19 @@ class Project extends Resource
      */
     public function fields(Request $request)
     {
-        return [
+        return array(
             ID::make(__('ID'),'id')->sortable(),
             Text::make(__('Projects Name'),'project_name') ->rules('required', 'max:255'),
-            Text::make('url_project'),
+            Link::make('url_project', 'url_project')->rules('required'),
+            Text::make(__('username'),'username') ->rules('required', 'max:255'),
+            Text::make(__('password_project'),'password_project') ->rules('required', 'max:255'),
+            Link::make('github_link', 'github_link')->rules('required'),
             Textarea::make('information_project'),
-            DateTime::make(__('startDate_project'),'startDate_project')->showOnDetail()->rules('required'),
-            DateTime::make(__('endDate_project'),'endDate_project')->showOnDetail()->rules('required'),
-
+            Date::make(__('startDate_project'),'startDate_project')->showOnDetail()->rules('required'),
+            Date::make(__('endDate_project'),'endDate_project')->showOnDetail()->rules('required'),
             BelongsTo::make(__('AssignTo'),'user',User::class),
-        ];
+
+        );
     }
 
     /**

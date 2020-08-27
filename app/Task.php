@@ -14,4 +14,5 @@ class Task extends Model
         return $this->belongsTo(TypeOfTask::class, 'typeTask_id');
     }
 
+
 }

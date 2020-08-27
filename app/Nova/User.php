@@ -75,7 +75,7 @@ class User extends Resource
                 ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:8')
                 ->updateRules('nullable', 'string', 'min:8'),
-            HasMany::make(__('Task'),'project',Project::class)->hideFromDetail(),
+            HasMany::make(__('Projects'),'project',Project::class),
    // CheckboxField::make('Test'),
         ];
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29681be55f4fae4fca22aba3f984fb91",
+    "content-hash": "c1e9863ef7a0bcbf655300dc30e8e7e2",
     "packages": [
         {
             "name": "Ab/CheckboxField",
@@ -1748,6 +1748,48 @@
                 "laravel"
             ],
             "time": "2020-04-27T15:26:29+00:00"
+        },
+        {
+            "name": "khalin/nova-link-field",
+            "version": "v1.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oleghalin/nova-link-field.git",
+                "reference": "3179ee3b573d8911598ec09219d531fc45734c1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oleghalin/nova-link-field/zipball/3179ee3b573d8911598ec09219d531fc45734c1b",
+                "reference": "3179ee3b573d8911598ec09219d531fc45734c1b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": ">=2.1",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Khalin\\Nova\\Field\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Khalin\\Nova\\Field\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova Link field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2020-08-24T16:40:40+00:00"
         },
         {
             "name": "laravel/framework",

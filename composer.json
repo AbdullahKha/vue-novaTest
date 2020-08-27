@@ -21,6 +21,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "halimtuhu/array-images": "^1.1",
         "jeroennoten/laravel-adminlte": "^3.2",
+        "khalin/nova-link-field": "^1.2",
         "laravel/framework": "^7.0",
         "laravel/nova": "*",
         "laravel/tinker": "^2.0",

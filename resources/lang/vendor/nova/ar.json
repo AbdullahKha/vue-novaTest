@@ -521,7 +521,7 @@
   ":resource Details": "تفاصيل :resource",
   "Available": "متاح",
   "Not Available": "غير متاح",
-  "ID": "الرقم التسلسلي",
+  "ID": "الرقم",
   "Created By Filter": "انشئ بواسطة",
   "Reset Filters": "اعادة تعيين",
   "Press / to search": "البحث...",
@@ -684,6 +684,8 @@
   "365Days": "سنة",
   "60Days": "شهرين",
   "30Days": "شهر",
+    "startDate_project": "تاريخ بداية المشروع",
+    "endDate_project": "تاريخ نهاية المشروع",
 
     "Projects": "المشاريع",
     "Project": "المشروع",
