@@ -21,14 +21,15 @@ class CreateProjectsTable extends Migration
             $table->string('github_link');
             $table->string('username');
             $table->string('password_project');
-            $table->text('information_project');
-            $table->date('startDate_project');
-            $table->date('endDate_project');
+            $table->text('information_project')->nullable();
+//            $table->date('startDate_project');
+//            $table->date('endDate_project');
             $table->foreign('created_by_user_id')
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
+            $table->json('hobbies');
             $table->timestamps();
         });
     }

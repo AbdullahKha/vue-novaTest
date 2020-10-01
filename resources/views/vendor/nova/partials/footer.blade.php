@@ -2,5 +2,5 @@
 
     &copy; {{ date('Y') }}
     <span class="px-1">&middot;</span>
-    مهام
+
 </p>

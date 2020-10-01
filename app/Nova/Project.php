@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 
+use Fourstacks\NovaCheckboxes\Checkboxes;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Date;
@@ -62,10 +63,15 @@ class Project extends Resource
             Text::make(__('password_project'),'password_project') ->rules('required', 'max:255'),
             Link::make('github_link', 'github_link')->rules('required'),
             Textarea::make('information_project'),
-            Date::make(__('startDate_project'),'startDate_project')->showOnDetail()->rules('required'),
-            Date::make(__('endDate_project'),'endDate_project')->showOnDetail()->rules('required'),
+//            Date::make(__('startDate_project'),'startDate_project')->showOnDetail()->rules('required'),
+//            Date::make(__('endDate_project'),'endDate_project')->showOnDetail()->rules('required'),
             BelongsTo::make(__('AssignTo'),'user',User::class),
-
+        Checkboxes::make('Hobbies')
+                ->options([
+                    'sailing' => 'Sailing',
+                    'rock_climbing' => 'Rock Climbing',
+                    'archery' => 'Archery'
+                ])
         );
     }
 
