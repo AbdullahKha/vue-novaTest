@@ -10,7 +10,7 @@ class Project extends Model
     protected $casts=[
 //        'startDate_project'=>'date',
 //         'endDate_project'=>'date',
-        'hobbies' => 'array'
+//        'hobbies' => 'array'
     ];
 
     public function user(){

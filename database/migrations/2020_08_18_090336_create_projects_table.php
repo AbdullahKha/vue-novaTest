@@ -27,7 +27,7 @@ class CreateProjectsTable extends Migration
                 ->on('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
-            $table->json('hobbies');
+//            $table->json('hobbies');
             $table->timestamps();
         });
     }
