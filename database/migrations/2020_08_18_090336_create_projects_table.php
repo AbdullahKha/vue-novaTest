@@ -22,8 +22,6 @@ class CreateProjectsTable extends Migration
             $table->string('username');
             $table->string('password_project');
             $table->text('information_project')->nullable();
-//            $table->date('startDate_project');
-//            $table->date('endDate_project');
             $table->foreign('created_by_user_id')
                 ->references('id')
                 ->on('users')

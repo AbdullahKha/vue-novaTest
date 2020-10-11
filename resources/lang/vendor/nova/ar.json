@@ -684,15 +684,9 @@
   "365Days": "سنة",
   "60Days": "شهرين",
   "30Days": "شهر",
-    "startDate_project": "تاريخ بداية المشروع",
-    "endDate_project": "تاريخ نهاية المشروع",
-
     "Projects": "المشاريع",
     "Project": "المشروع",
     "Projects Name": "اسم المشروع",
-    "Tasks": "المهام",
-    "Task": "المهمة",
-    "Type Of Task": "نوع المهمة",
-    "Type Of Tasks": "أنواع المهام",
+    "Support": "دعم",
   "*": "*"
 }

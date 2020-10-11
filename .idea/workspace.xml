@@ -20,22 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vue-novaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-novaTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Task.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/TypeOfTask.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/TypeOfTask.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_090336_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_090336_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_20_114501_create_type_of_tasks_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_125511_create_tasks_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova/resources/views/auth/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/resources/views/auth/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/nova/ar.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/ar.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +244,8 @@
       <workItem from="1597584710163" duration="382000" />
       <workItem from="1597739325868" duration="8633000" />
       <workItem from="1598169094467" duration="27404000" />
-      <workItem from="1601548902760" duration="2463000" />
+      <workItem from="1601548902760" duration="2520000" />
+      <workItem from="1602405889466" duration="766000" />
     </task>
     <servers />
   </component>
@@ -296,12 +288,13 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1284" y="335" key="git4idea.merge.GitPullDialog/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1601548931139" />
-    <state x="-3194" y="218" width="672" height="736" key="search.everywhere.popup" timestamp="1598522166016">
-      <screen x="-3840" y="0" width="1920" height="1080" />
+    <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup" timestamp="1602405928825">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1598257451803" />
     <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-1920.0.1920.1080/-3840.23.1920.1057/0.23.1680.988@-1920.0.1920.1080" timestamp="1598258410670" />
     <state x="-3194" y="218" width="672" height="736" key="search.everywhere.popup/-1920.23.1920.1057/-3840.0.1920.1080/0.23.1680.988@-3840.0.1920.1080" timestamp="1598456649989" />
+    <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1602405928825" />
     <state x="-3194" y="218" width="672" height="736" key="search.everywhere.popup/-3840.0.1920.1080/-1920.23.1920.1057/0.23.1680.989@-3840.0.1920.1080" timestamp="1598522166016" />
   </component>
   <component name="masterDetails">
