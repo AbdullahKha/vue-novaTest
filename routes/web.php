@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::group(['middleware' => 'auth'], function () {
+//    Route::get('/download/{file}', function ($file) {
+//        $path = storage_path() . '/' . 'app' . '/public/reports/' . $file;
+//        if (file_exists($path)) {
+//            return Response::download($path);
+//        }
+//    });
+//});

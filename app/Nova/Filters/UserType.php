@@ -24,8 +24,8 @@ class UserType extends Filter
      */
     public function apply(Request $request, $query, $value)
     {
-        return $query->where('is_admin', $value['admin'])
-            ->where('is_editor', $value['editor']);
+        return $query->where('admin', $value['admin'])
+            ->where('user', $value['user']);
     }
 
     /**
@@ -37,8 +37,8 @@ class UserType extends Filter
     public function options(Request $request)
     {
         return [
-            'Administrator' => 'admin',
-            'Editor' => 'editor',
+            'admin' => 'admin',
+            'user' => 'user',
         ];
     }
 }

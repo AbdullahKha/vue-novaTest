@@ -1,28 +1,25 @@
 <?php
 
-namespace App\Nova;
+namespace App\Nova\Resources;
 
-use Ab\CheckboxField\CheckboxField;
-use App\Nova\Filters\BirthdayFilter;
-use App\Nova\Filters\DateRange;
-use App\Nova\Filters\NumberRange;
-use App\Nova\Filters\UserType;
+
+use App\Nova\Actions\ExportReport;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Gravatar;
-use Laravel\Nova\Fields\HasMany;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Text;
-use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
-use Halimtuhu\ArrayImages\ArrayImages;
-class User extends Resource
+use Laravel\Nova\Fields\Textarea;
+use Khalin\Nova\Field\Link;
+use Laravel\Nova\Http\Requests\NovaRequest;
+
+class Project extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\User::class;
+    public static $model = \App\Models\Project::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -31,13 +28,13 @@ class User extends Resource
      */
     public static function label()
     {
-        return __('Users');
+        return __('Projects');
     }
     public static function singularLabel()
     {
-        return __('Usersingle');
+        return __('Project');
     }
-    public static $title = 'name';
+    public static $title = 'project_name';
 
     /**
      * The columns that should be searched.
@@ -45,7 +42,7 @@ class User extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name', 'email',
+        'id',
     ];
 
     /**
@@ -56,28 +53,21 @@ class User extends Resource
      */
     public function fields(Request $request)
     {
-        return [
-            ID::make()->sortable(),
-//            ArrayImages::make('Images', 'images'),
-//            Gravatar::make()->maxWidth(50),
-
-            Text::make('Name')
-                ->sortable()
-                ->rules('required', 'max:255'),
-
-            Text::make('Email')
-                ->sortable()
-                ->rules('required', 'email', 'max:254')
-                ->creationRules('unique:users,email')
-                ->updateRules('unique:users,email,{{resourceId}}'),
-
-            Password::make('Password')
-                ->onlyOnForms()
-                ->creationRules('required', 'string', 'min:8')
-                ->updateRules('nullable', 'string', 'min:8'),
-            HasMany::make(__('Projects'),'project',Project::class),
-   // CheckboxField::make('Test'),
-        ];
+        return array(
+            ID::make(__('ID'),'id')->sortable(),
+            Text::make(__('Projects Name'),'project_name') ->rules('required', 'max:255'),
+            Link::make('url_project', 'url_project')->rules('required'),
+            Text::make(__('username'),'username') ->rules('required', 'max:255'),
+            Text::make(__('password_project'),'password_project') ->rules('required', 'max:255'),
+            Link::make('github_link', 'github_link')->rules('required'),
+            Textarea::make('information_project'),
+            Text::make(__('project_type'),'project_type') ->rules('required', 'max:255'),
+            BelongsTo::make(__('AssignTo'),'user',User::class),
+//        Checkboxes::make('Hobbies')
+//                ->options([
+//                   User::class
+//                ])
+        );
     }
 
     /**
@@ -88,7 +78,8 @@ class User extends Resource
      */
     public function cards(Request $request)
     {
-        return [];
+        return [
+        ];
     }
 
     /**
@@ -99,13 +90,7 @@ class User extends Resource
      */
     public function filters(Request $request)
     {
-        return [
-
-            new NumberRange(),
-            new DateRange(),
-            new UserType(),
-            new BirthdayFilter()
-        ];
+        return [];
     }
 
     /**
@@ -128,7 +113,7 @@ class User extends Resource
     public function actions(Request $request)
     {
         return [
-            new DownloadExcel,
+//            new ExportReport
         ];
     }
 }

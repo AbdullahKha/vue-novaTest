@@ -1,12 +1,17 @@
 <?php
 
-namespace App\Nova;
+namespace App\Nova\Resources;
 
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Resource as NovaResource;
 
 abstract class Resource extends NovaResource
 {
+
+    public static function icon()
+    {
+        return '<i class="ti-home text-lg mx-2 opacity-50"></i>';
+    }
     /**
      * Build an "index" query for the given resource.
      *

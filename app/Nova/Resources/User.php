@@ -1,42 +1,43 @@
 <?php
 
-namespace App\Nova;
+namespace App\Nova\Resources;
 
 
-use Fourstacks\NovaCheckboxes\Checkboxes;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Textarea;
-use Khalin\Nova\Field\Link;
-use Laravel\Nova\Http\Requests\NovaRequest;
+use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 
-class Project extends Resource
+class User extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Project::class;
+    public static $model = \App\Models\User::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
+
+    public static function icon()
+    {
+        return '<i class="ti-user mr-2 text-lg"></i>';
+    }
     public static function label()
     {
-        return __('Projects');
+        return __('Users');
     }
     public static function singularLabel()
     {
-        return __('Project');
+        return __('Usersingle');
     }
-    public static $title = 'project_name';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -44,7 +45,7 @@ class Project extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id', 'name', 'email',
     ];
 
     /**
@@ -55,20 +56,28 @@ class Project extends Resource
      */
     public function fields(Request $request)
     {
-        return array(
-            ID::make(__('ID'),'id')->sortable(),
-            Text::make(__('Projects Name'),'project_name') ->rules('required', 'max:255'),
-            Link::make('url_project', 'url_project')->rules('required'),
-            Text::make(__('username'),'username') ->rules('required', 'max:255'),
-            Text::make(__('password_project'),'password_project') ->rules('required', 'max:255'),
-            Link::make('github_link', 'github_link')->rules('required'),
-            Textarea::make('information_project'),
-            BelongsTo::make(__('AssignTo'),'user',User::class),
-//        Checkboxes::make('Hobbies')
-//                ->options([
-//                   User::class
-//                ])
-        );
+        return [
+            ID::make()->sortable(),
+//            ArrayImages::make('Images', 'images'),
+//            Gravatar::make()->maxWidth(50),
+
+            Text::make('Name')
+                ->sortable()
+                ->rules('required', 'max:255'),
+
+            Text::make('Email')
+                ->sortable()
+                ->rules('required', 'email', 'max:254')
+                ->creationRules('unique:users,email')
+                ->updateRules('unique:users,email,{{resourceId}}'),
+
+            Password::make('Password')
+                ->onlyOnForms()
+                ->creationRules('required', 'string', 'min:8')
+                ->updateRules('nullable', 'string', 'min:8'),
+            HasMany::make(__('Projects'),'project',Project::class),
+   // CheckboxField::make('Test'),
+        ];
     }
 
     /**
@@ -90,7 +99,12 @@ class Project extends Resource
      */
     public function filters(Request $request)
     {
-        return [];
+        return [
+
+//            new NumberRange(),
+//            new DateRange(),
+//            new UserType,
+        ];
     }
 
     /**
@@ -112,6 +126,8 @@ class Project extends Resource
      */
     public function actions(Request $request)
     {
-        return [];
+        return [
+            new DownloadExcel,
+        ];
     }
 }
