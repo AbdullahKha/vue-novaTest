@@ -20,33 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7cb826e-aab0-4b21-9a68-e9b6db890e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/ArbFONTS-Bahij_TheSansArabic-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/ArbFONTS-DINNextLTArabic-Black-2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/ArbFONTS-DINNextLTArabic-Bold-2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/ArbFONTS-DINNextLTArabic-Medium-2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/ArbFONTS-DINNextLTArabic-Regular-2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/ArbFONTS-DINNextLTArabic-UltraLight-2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/bahij-thesansarabic-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/cover.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/page_001.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vue-novaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-novaTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Filters/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Filters/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Resources/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Resource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Resources/Resource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Resources/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_090336_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_090336_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nova-calendar-tool.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/nova-calendar-tool.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +253,8 @@
       <workItem from="1601548902760" duration="2520000" />
       <workItem from="1602405889466" duration="1117000" />
       <workItem from="1602416235741" duration="1258000" />
-      <workItem from="1602512373955" duration="5660000" />
+      <workItem from="1602512373955" duration="5919000" />
+      <workItem from="1602957868026" duration="1597000" />
     </task>
     <servers />
   </component>
@@ -322,8 +298,8 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1284" y="335" key="git4idea.merge.GitPullDialog/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1601548931139" />
-    <state x="565" y="221" width="670" height="670" key="search.everywhere.popup" timestamp="1602528639444">
-      <screen x="0" y="23" width="1680" height="982" />
+    <state x="565" y="212" width="670" height="717" key="search.everywhere.popup" timestamp="1602958659248">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1598257451803" />
     <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-1920.0.1920.1080/-3840.23.1920.1057/0.23.1680.988@-1920.0.1920.1080" timestamp="1598258410670" />
@@ -331,6 +307,7 @@
     <state x="-1274" y="218" width="672" height="736" key="search.everywhere.popup/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1602405928825" />
     <state x="-3194" y="218" width="672" height="736" key="search.everywhere.popup/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1680.1050@-3840.0.1920.1080" timestamp="1602416468962" />
     <state x="-3194" y="218" width="672" height="736" key="search.everywhere.popup/-3840.0.1920.1080/-1920.23.1920.1057/0.23.1680.989@-3840.0.1920.1080" timestamp="1598522166016" />
+    <state x="565" y="212" width="670" height="717" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1602958659248" />
     <state x="565" y="221" width="670" height="669" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1602526496722" />
     <state x="565" y="221" width="670" height="670" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1602528639444" />
   </component>
