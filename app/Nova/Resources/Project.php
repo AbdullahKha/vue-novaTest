@@ -4,9 +4,11 @@ namespace App\Nova\Resources;
 
 
 use App\Nova\Actions\ExportReport;
+use App\Nova\Filters\ProjectType;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Khalin\Nova\Field\Link;
@@ -56,12 +58,16 @@ class Project extends Resource
         return array(
             ID::make(__('ID'),'id')->sortable(),
             Text::make(__('Projects Name'),'project_name') ->rules('required', 'max:255'),
-            Link::make('url_project', 'url_project')->rules('required'),
-            Text::make(__('username'),'username') ->rules('required', 'max:255'),
-            Text::make(__('password_project'),'password_project') ->rules('required', 'max:255'),
+            Link::make(__('Url Project'), 'url_project')->rules('required'),
+            Text::make(__('Username'),'username') ->rules('required', 'max:255'),
+            Text::make(__('Password'),'password_project') ->rules('required', 'max:255'),
             Link::make('github_link', 'github_link')->rules('required'),
+            Select::make(__('Project type'),'project_type')->options([
+                'Sys'=>__('Sys'),
+                'Archi'=>__('Archi'),
+                'Web'=>__('Web'),
+            ]) ->rules('required'),
             Textarea::make('information_project'),
-            Text::make(__('project_type'),'project_type') ->rules('required', 'max:255'),
             BelongsTo::make(__('AssignTo'),'user',User::class),
 //        Checkboxes::make('Hobbies')
 //                ->options([
@@ -90,7 +96,9 @@ class Project extends Resource
      */
     public function filters(Request $request)
     {
-        return [];
+        return [
+            new ProjectType
+        ];
     }
 
     /**

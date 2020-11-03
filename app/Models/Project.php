@@ -13,6 +13,8 @@ class Project extends Model
 //        'startDate_project'=>'date',
 //         'endDate_project'=>'date',
 //        'hobbies' => 'array'
+    'project_type',
+    'github_link'
     ];
 
     public function user(){

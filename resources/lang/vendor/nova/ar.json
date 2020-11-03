@@ -688,5 +688,12 @@
     "Project": "المشروع",
     "Projects Name": "اسم المشروع",
     "Support": "دعم",
+    "Sys": "أتمتة",
+    "Archi": "أرشفة",
+    "Web": "ويب",
+    "Project type": "نوع المشروع",
+    "Url Project": "رابط المشروع",
+
+
   "*": "*"
 }
