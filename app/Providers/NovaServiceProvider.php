@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Project;
 use App\Nova\Metrics\ProjectCount;
+use App\Observers\ProjectObserver;
 use Czemu\NovaCalendarTool\NovaCalendarTool;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Cards\Help;
@@ -19,6 +21,15 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function boot()
     {
         parent::boot();
+
+        Nova::style('Style', public_path('novatestTheme/nova-theme/theme.css'));
+
+        Nova::serving(function () {
+            Project::observe(ProjectObserver::class);
+
+
+
+        });
     }
 
     /**
@@ -58,7 +69,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            new ProjectCount()
+
         ];
     }
 

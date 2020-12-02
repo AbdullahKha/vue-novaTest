@@ -3,8 +3,8 @@
 namespace App\Nova\Resources;
 
 
-use App\Nova\Actions\ExportReport;
 use App\Nova\Filters\ProjectType;
+use App\Nova\Metrics\ProjectCount;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
@@ -44,7 +44,7 @@ class Project extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id','project_name'
     ];
 
     /**
@@ -66,9 +66,9 @@ class Project extends Resource
                 'Sys'=>__('Sys'),
                 'Archi'=>__('Archi'),
                 'Web'=>__('Web'),
-            ]) ->rules('required'),
+            ]) ->rules('required')->showOnIndex(),
             Textarea::make('information_project'),
-            BelongsTo::make(__('AssignTo'),'user',User::class),
+            BelongsTo::make(__('CreatedBy'),'user',User::class)->exceptOnForms(),
 //        Checkboxes::make('Hobbies')
 //                ->options([
 //                   User::class
@@ -85,6 +85,7 @@ class Project extends Resource
     public function cards(Request $request)
     {
         return [
+            new ProjectCount()
         ];
     }
 
@@ -124,4 +125,5 @@ class Project extends Resource
 //            new ExportReport
         ];
     }
+
 }

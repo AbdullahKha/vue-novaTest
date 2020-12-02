@@ -13,6 +13,6 @@ class Dashboard extends Tool
      */
     public function renderNavigation()
     {
-        return view('nova::dashboard.navigation');
+//        return view('nova::dashboard.navigation');
     }
 }

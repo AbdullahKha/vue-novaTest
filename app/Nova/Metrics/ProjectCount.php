@@ -18,7 +18,11 @@ class ProjectCount extends Value
     {
         return $this->count($request, Project::class);
     }
-
+    public $width = '1/4';
+    public function name()
+    {
+        return __('NumberProject');
+    }
     /**
      * Get the ranges available for the metric.
      *
@@ -27,13 +31,10 @@ class ProjectCount extends Value
     public function ranges()
     {
         return [
-            30 => '30 Days',
-            60 => '60 Days',
-            365 => '365 Days',
-            'TODAY' => 'Today',
-            'MTD' => 'Month To Date',
-            'QTD' => 'Quarter To Date',
-            'YTD' => 'Year To Date',
+//            'TODAY' => __('Today'),
+            30 => __('30Days'),
+            60 => __('60Days'),
+            365 => __('365Days'),
         ];
     }
 
@@ -44,7 +45,7 @@ class ProjectCount extends Value
      */
     public function cacheFor()
     {
-        // return now()->addMinutes(5);
+         return now()->addMinutes(5);
     }
 
     /**

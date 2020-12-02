@@ -655,7 +655,7 @@
   "High": "عالي ",
   "Medium": "متوسط ",
   "low": "ضعيف ",
-  "AssignTo": "مسند إلى  ",
+  "CreatedBy": "أنشئ بواسطة",
   "SolvedBy": " أغلقت بواسطة",
   "IdProblem": "رقم الحادثة",
   "SystemName": "اسم النظام",
@@ -693,7 +693,7 @@
     "Web": "ويب",
     "Project type": "نوع المشروع",
     "Url Project": "رابط المشروع",
-
+    "NumberProject": "عدد المشاريع",
 
   "*": "*"
 }

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     //
+    protected $with=['user'];
     protected $casts=[
 //        'startDate_project'=>'date',
 //         'endDate_project'=>'date',
